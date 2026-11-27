@@ -1,10 +1,13 @@
 <x-layout>
-<div class="container-fluid text-center bg-body-secondary">
-    <div class="row vh-100 justify-content-center align-items-center">
-        <div class="col-12">
-            <h1 class="display-4">Presto Linda</h1>
+    <div class="container-fluid c-custom">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="my-3 vh-75 d-flex justify-content-center">
+                @auth
+                    <a href="{{ route('create.article') }}" class="btn-custom fs-3">
+                        Pubblica il tuo articolo
+                    </a>
+                @endauth
+            </div>
         </div>
     </div>
-</div>
-
 </x-layout>

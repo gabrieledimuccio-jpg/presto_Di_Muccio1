@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid mt-5 bg-body-secondary">
+    <div class="container-fluid div-custom">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <h1 class="display-5 pt-4 mb-3">
@@ -9,18 +9,18 @@
         </div>
         <div class="row justify-content-center vh-100">
             <div class="col-12 col-md-6 text-center">
-                <form method="POST" action="{{ route('login') }}" class="shadow rounded p-3 mb-5">
+                <form method="POST" action="{{ route('login') }}" class="shadow border rounded p-3 mb-5">
                     @csrf
                     <!-- Email input -->
                     <div data-mdb-input-init class="form-outline mb-4 d-flex flex-column align-items-center">
-                        <input type="email" name="email" id="email" class="form-control w-75" />
                         <label class="form-label" for="email">Email address</label>
+                        <input type="email" name="email" id="email" class="form-control w-75" />
                     </div>
                     
                     <!-- Password input -->
                     <div data-mdb-input-init class="form-outline mb-4 d-flex flex-column align-items-center">
-                        <input type="password" name="password" id="password" class="form-control w-75" />
                         <label class="form-label" for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control w-75" />
                     </div>
                     
                     <!-- 2 column grid layout for inline styling -->
